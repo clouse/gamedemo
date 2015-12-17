@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/account_btn_focus" android:state_enabled="true" android:state_focused="true"/>
+    <item android:drawable="@drawable/common_btn_click" android:state_enabled="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/account_btn_focus" android:state_checked="true" android:state_enabled="true"/>
+    <!--
+    <item android:drawable="@drawable/common_btn_focus" android:state_enabled="true" android:state_pressed="false" android:state_focused="true"/>
+    <item android:drawable="@drawable/common_btn_click" android:state_enabled="true" android:state_pressed="true" android:state_focused="true"/>
+    <item android:drawable="@drawable/common_btn_focus" android:state_checked="true" android:state_enabled="true"/>
+    -->
+    <item android:drawable="@color/btn_normal_color"/>
+
+</selector>

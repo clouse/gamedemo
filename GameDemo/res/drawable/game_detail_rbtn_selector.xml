@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_checked="false" android:state_focused="false" android:drawable="@color/rbtn_normal_bg"></item>
+    <item android:state_checked="true"  android:state_focused="true"  android:drawable="@drawable/game_detail_rbtn_shape"></item>
+    <item android:state_checked="true" android:state_focused="false" android:drawable="@color/rbtn_focus_bg"></item>
+</selector>

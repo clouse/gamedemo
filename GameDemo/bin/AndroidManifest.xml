@@ -1,0 +1,357 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atet.tvmarket"
+    android:versionCode="3060005"
+    android:versionName="3.6.0.5" >
+
+    <uses-sdk android:minSdkVersion="14" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.READ_FRAME_BUFFER" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="com.atet.tvmarket.app.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.atet.tvmarket.control.start.DeviceIdActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="com.sxhl.tcltvmarket.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="com.sxhl.tcltvmarket.VIDEOGUIDE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="com.sxhl.tcltvmarket.ACTIVITIES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="com.sxhl.tcltvmarket.GAMECLASSIFY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sxhl.tcltvmarket.MYGAME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sxhl.tcltvmarket.DETAILGAME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sxhl.tcltvmarket.GIFTPACKAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atet.tvmarket.control.home.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name="com.atet.tvmarket.control.promotion.activity.IntegralExchangeSucActivity" >
+        </activity>
+        <activity
+            android:name="com.atet.tvmarket.control.home.VedioActivity"
+            android:theme="@style/MyDialogTopRight" >
+        </activity>
+        <activity android:name="com.atet.tvmarket.control.home.activity.JoyPadBuyActivity" >
+        </activity>
+        <activity android:name="com.atet.tvmarket.control.promotion.activity.PromotionDetailsActivity" >
+        </activity>
+        <activity android:name="com.atet.tvmarket.control.home.activity.LuckyDrawActivity" >
+        </activity>
+        <activity android:name="com.atet.tvmarket.control.promotion.activity.DepositBoxActivity" >
+        </activity>
+        <activity android:name="com.atet.tvmarket.control.promotion.activity.IntegralDetailsActivity" >
+        </activity>
+        <activity android:name="com.atet.tvmarket.control.promotion.activity.GiftDetailActivity" >
+        </activity>
+        <activity android:name="com.atet.tvmarket.control.promotion.activity.GiftReceivedSucActivity" >
+        </activity>
+        <activity android:name="com.atet.tvmarket.control.promotion.activity.DepositActivity" >
+        </activity>
+        <activity android:name="com.atet.tvmarket.control.promotion.activity.IntegralExchangeActivity" >
+        </activity>
+        <activity android:name="com.atet.tvmarket.control.promotion.activity.PromotionAreaActivity" >
+        </activity>
+        <activity android:name="com.atet.tvmarket.control.promotion.activity.GiftActivity" >
+        </activity>
+        <activity
+            android:name="com.atet.tvmarket.control.classify.ranking.GameRankingActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.atet.tvmarket.control.classify.area.GameAreaActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.atet.tvmarket.control.classify.special.GameSpecialActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.atet.tvmarket.control.gamerecommand.NewGameRecommandActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity android:name="com.atet.tvmarket.control.mygame.activity.MyGameActivity" >
+        </activity>
+        <activity android:name="com.atet.tvmarket.control.mygame.activity.GameDetailActivity" >
+        </activity>
+        <activity
+            android:name="com.atet.tvmarket.control.task.TaskActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.atet.tvmarket.control.video.PlayVideoActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.atet.tvmarket.control.mine.MineAccountChangeActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.mine.MineAboutActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.mine.MineRechargeActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.mine.MineFindPasswordActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.mine.MineModifyPasswordActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.mine.MineModifyPasswordSuccessActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.mine.MineAccountSafetyActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.mine.MineBindPhoneActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.mine.MineAccountManagerActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.setup.SetupVideoActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.setup.SetupUpdateActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.setup.SetupChildlockActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.setup.SetupChildlockSetPasswordActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.setup.SetupChildlockSetNewAgePasswordActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.setup.SetupChildlockModifyPasswordActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.setup.SetupChildlockConfirmpasswordActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.setup.SetupHandlelinkActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.setup.SetupHandlelinkDetailActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.setup.SetupHandlelinkDetail3Activity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.search.SearchActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.atet.tvmarket.control.classify.detail.ThirdGameDetailActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.atet.tvmarket.control.gamerecommand.NewGameScreenShotActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.atet.tvmarket.control.mygame.activity.RelativeGameActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+
+        <provider
+            android:name="com.atet.tvmarket.control.mygame.MyGameProvider"
+            android:authorities="com.atet.tvmarket.provider"
+            android:exported="true" />
+
+        <receiver android:name="com.atet.tvmarket.control.mygame.receiver.BReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sxhl.tcltvmarket.launcher_main" />
+            </intent-filter>
+<!--             <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+ -->        </receiver>
+
+        <service android:name="com.atet.tvmarket.control.mygame.UpdateGameService" >
+        </service>
+        <service android:name="com.atet.tvmarket.service.DownloadService" >
+        </service>
+
+        <!-- ******************************* 统计服务 Start ******************************* -->
+        <service android:name="com.atet.statistics.services.UploadPlatFormTimeInfoService" />
+        <service android:name="com.atet.statistics.services.UploadGameOnlineService" />
+        <service android:name="com.atet.statistics.services.GameCollectService" />
+        <service android:name="com.atet.statistics.services.PlatFormOnlineService" />
+        <service android:name="com.atet.statistics.services.StatisticsGameOnlineService" />
+        <service android:name="com.atet.statistics.services.UpdateHardwareService" />
+
+<!--         <receiver android:name="com.atet.statistics.receiver.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+ -->        <!-- ******************************* 统计服务 End ******************************* -->
+
+
+        <!-- ******************************* 支付SDK Start ******************************* -->
+        <activity
+            android:name="com.atet.api.pay.ui.service.InitActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+
+        <service android:name="com.atet.api.pay.ui.service.AtetPayService" >
+            <intent-filter>
+                <action android:name="com.atet.api.pay.ui.service.IAtetPayService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.atetpay.login.LoginActivity_" />
+        <activity android:name="com.atetpay.pay.PayActivity_" />
+        <activity android:name="com.atetpay.pay.PayFlatActivity_" />
+        <activity
+            android:name="com.atetpay.login.MobileLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.atetpay.pay.MobilePayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.atetpay.scan.ScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.atetpay.scan.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.atetpay.recharge.RechargeActivity" />
+        <activity
+            android:name="com.atetpay.recharge.InpourPriceActivity" />
+        <activity
+            android:name="com.atetpay.recharge.MobileInpourPriceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.atetpay.recharge.MobileRechargeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 以下是支付宝所需activity资源 -->
+        <activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.atetpay.login.activity.LincenseActivity_" />
+        <!-- ******************************* 支付SDK End ******************************* -->
+
+
+        <!-- ******************************* 数据更新  Start ******************************* -->
+        <service android:name="com.atet.tvmarket.model.dataupdate.DataUpdateService" android:process=":remote" />
+
+        <receiver android:name="com.atet.tvmarket.receiver.BReceiver" android:process=":remote" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.atet.tvmarket.action_data_update" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.atet.tvmarket.action_data_update" />
+            </intent-filter>
+        </receiver>
+        <!-- ******************************* 数据更新  End ******************************* -->
+        <!-- ******************************* 友盟统计配置   ******************************* -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55fd7c1867e58e6bda005a98" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+    </application>
+
+</manifest>
